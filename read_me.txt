@@ -1,0 +1,45 @@
+Laravel Bigner
+
+
+Xampp with php8 version
+
+
+
+composer install using exe
+
+-----------------
+laravel/installer
+------------------
+composer global require laravel/installer
+
+
+
+-----------------
+laravel project create
+------------------
+composer create-project laravel/laravel:^8.0 blog
+
+---------
+To create controller
+----------
+
+php artisan make:controller userController
+
+---------
+To create component
+----------
+
+ php artisan make:component Header
+
+---------------
+upgrade lib using composer
+----------------
+
+composer update doctrine/doctrine-fixtures-bundle
+
+------------------
+URL Class use
+------------------
+
+
+https://laravel.com/api/9.x/Illuminate/Support/Facades/URL.html
