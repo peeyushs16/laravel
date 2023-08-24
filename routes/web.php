@@ -27,6 +27,7 @@ Route::view("noaccess", "noaccess");
 Route::view("user_list", "users");
 Route::view("user_list_model", "users");
 Route::view("check_method", "method");
+Route::view("session_flase", "method");
 
 //for new version of laravel
 Route::get("user/{id}", [UserController::class, "show"]);
@@ -41,6 +42,9 @@ Route::post("user_post", [AdminController::class, "method_post"]);
 Route::put("user_put", [AdminController::class, "method_put"]);
 Route::delete("user_delete", [AdminController::class, "method_delete"]);
 Route::get("user_get", [AdminController::class, "method_get"]);
+
+
+Route::post("session_flase", [AdminController::class, "session_flash"]);
 
 
 Route::match(['get', 'post', 'put', 'delete'], 'method_user',[AdminController::class, "method_use"]);

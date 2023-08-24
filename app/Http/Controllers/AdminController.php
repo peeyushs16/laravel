@@ -59,6 +59,15 @@ class AdminController extends Controller{
     }
     
     function method_use(Request $req){
+
         return $req;
+    }
+
+    
+    function session_flash(Request $req){
+
+        $data = $req->input('username');
+        $req->session()->flash('user', $data);
+        return redirect('session_flase');
     }
 }
